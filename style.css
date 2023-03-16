@@ -1,0 +1,115 @@
+*{
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 2px solid #ddd;
+}
+
+.hero__Image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 2.5rem;
+}
+
+.info__Button{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 2.5rem 5rem;
+    transition-duration: 1000ms;
+}
+
+.info__Button:hover{
+    background-color: orange;
+}
+
+.info__Title{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.info__Subtitle {
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.services__Title{
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: end;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 2.5rem;
+}
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.dishes__Image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1000ms;
+}
+
+.dishes__Image img:hover{
+    box-shadow: 10px 5px 5px black;
+}
+
+.dishes__Image__Big{
+    grid-area: 1/ 1/ 3/ 3;
+}
+
+.plates {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-template-rows: repeat(2, minmax(150px, 1fr));
+}
+
+.plates__Image img{
+    background-color: bisque;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 1000ms;
+}
+
+.plates__Image img:hover{
+    background-color: lightcoral;
+}
+
+.menu__Title{
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: start;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5rem;
+}
